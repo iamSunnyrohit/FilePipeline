@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "dev": "nodemon src/app.js",
-  "worker": "nodemon src/workers/fileWorker.js",
-  "start": "node src/app.js",
-  "start:worker": "node src/workers/fileWorker.js"
-},
+  "scripts": {
+"dev": "node --watch src/app.js",
+  "worker": "node --watch src/worker.js",
+    "start": "node src/app.js",
+    "start:worker": "node src/workers/fileWorker.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -31,4 +31,3 @@
     "nodemon": "^3.1.14"
   }
 }
-
